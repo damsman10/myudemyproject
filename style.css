@@ -1,0 +1,681 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+/**The box-sizing property allows us to include the padding and 
+border in an element's total width and height.**/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+    background-color: white;
+    border-style: outset;
+}
+
+.left-side {
+    display: flex;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+#category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.left-side img {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-side ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.continuation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+header .left-side ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+}
+.navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+}
+.continuation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+}
+
+
+.left-side form {
+    display: flex;
+    border: 1px solid black;
+    height: 45px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.left-side input {
+    width: 1000px;
+    height: 100%;
+    border: 0;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    background-color: #F7F9FA;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #F7F9FA;
+    background-color: #F7F9FA;
+}
+
+.left-side button {
+    height: 100%;
+    width: 60px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    background-color: #F7F9FA;
+}
+
+.left-side ul .header-link {
+    font-size: 13px;
+}
+
+nav ul .header-link {
+    font-size: 13px;    
+}
+
+.header-button{
+    padding: 10px 15px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#login {
+    background-color: white;
+    color: black;
+}
+#signup {
+    background-color: black;
+    color: white;
+}
+#globe {
+    background-color: white;
+}
+
+.right-buttons {
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.slider {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** NOW ON TO THE MAIN **/
+
+.center {
+    position: absolute;
+    left: 15%;
+   /** width: 50%;
+    margin: auto;       Another style
+    margin-left: 280px;**/
+}
+.parent {
+    position: relative;
+}
+.child1 {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
+}
+.child2 {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 435px;
+    height: 220px;
+    z-index: 2;
+    opacity: 0.9;
+    border: none;
+    border-style: ridge;
+    background-color: white;
+    padding: 20px;
+}
+.child2 p {
+    line-height: 1.4;
+    margin-top: 10px;
+}
+.child2 h1 {
+    font-family: Arial, Helvetica, sans-serif, sans-serif
+}
+#listen-btn {
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    font-size: 15px;
+}
+#listen-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.continuation {
+    position: relative;
+    top: 440px;
+    width: 1350px;
+    left: 1%;
+}
+
+.continuation h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    margin: 20px 0;
+}
+.continuation p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.continuation ul {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-left: -18px;
+    margin-bottom: 15px;
+}
+.continuation ul li a {
+    font-weight: bold;
+    color: #6A6F73;
+}
+#python {
+    color: black;
+}
+
+.opportunity-container {
+    border: none;
+    border-style: ridge;
+    padding: 30px 0 0 25px;
+    width: 1300px;
+}
+
+.opportunity-container p {
+    font-size: 15px;
+    width: 65%;
+    margin: 10px 0;
+}
+.opportunity-container button {
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.opportunity-container .courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.courses .course {
+        width: 240px;
+        margin-bottom: 30px;
+        margin-left: -15px;
+}
+
+.course .thumbnail {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+}
+
+.course .thumbnail img {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+    border: none;
+    border-style: ridge;
+}
+
+.title h3 {
+    font-size: 16px;
+    color: black;
+}
+.title h3 a {
+    color: black;
+    text-decoration: none;
+}
+.author h6 {
+    font-size: 12px;
+    color: #6A748A;
+    margin: 6px 0;
+}
+.details .ratings {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.number-rate h6 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: #B4690E;
+    padding-right: 6px;
+}
+.ratings .star-ratings {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 14px;
+}
+.star-ratings .fa {
+    color:#E59819;
+    padding: 0 1px;
+}
+.student-no h6 {
+    margin-left: 4px;
+    color: #9A8C7C;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.price h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+.bestseller-btn button {
+    font-weight: bold;
+    padding:5px;
+    border: none;
+    background-color: #ECEB98;
+    margin-top: 10px;
+}
+.bestseller-btn button a {
+    text-decoration: none;
+    color: #3D3C0A;
+}
+
+.testimonial-frame {
+    margin: 30px 0;
+    width: 100%;
+    background-color: #F7F9FA;
+    position: absolute ;
+    top: 1270px;
+    padding-bottom: 20px;
+}
+.testimonial-frame .testimonials {
+    width: 68%;
+    margin: 60px 0 0 300px;
+}
+
+.testimonials .testimonies {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials .testimonial {
+    width: 30%;
+    height: 350px;
+    padding: 30px;
+    border: none;
+    border-style: ridge;
+}
+
+.testimonial .fa {
+    margin-bottom: 10px;
+}
+.testimonial p {
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.testimonial .author {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.testimonial .author .initials {
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+#ron-f {
+    padding: 4px 0 0 6px;
+}
+
+#testo1 {
+    background-color: white;
+}
+
+#testo2 {
+    background-color: white;
+}
+
+#testo3 {
+    background-color: white;
+}
+
+.testimonial h3 {
+    font-size: 14px;
+}
+.testimonial hr {
+    color: #D1D7DC;
+}
+.testimonies .bottom-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.testimonies .bottom-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #5624D0;
+}
+.bottom-links i {
+    width: 35px;
+    height: 25px;
+    padding: 4px 0 0 8px;
+    background-color: #5624D0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial #third-icon {
+    width: 25px;
+    height: 25px;
+    padding: 4px 0 0 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.center2 {
+    position: absolute;
+    left: 15%;
+    top: 1850px;
+}
+
+.center2 .courses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0 0 18px;
+    padding-right: 10px;
+}
+.center2 .courses .course {
+    margin-right: 50px;
+}
+.course .nailthumb img {
+    border: none;
+}
+.center2 h1 {
+    margin: 20px 0;
+}
+
+.categories-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -44px;
+}
+.categories-top .design-category img {
+    margin: 15px 0;
+}
+.categories-top .development-category img {
+    margin: 15px 0;
+}
+.categories-top .marketing-category img {
+    margin: 15px 0;
+}
+.categories-top .it-category img {
+    margin: 15px 0;
+}
+
+.categories-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -44px;
+}
+.categories-bottom .personal-category img {
+    margin: 15px 0;
+}
+.categories-bottom .business-category img {
+    margin: 15px 0;
+}
+.categories-bottom .photography-category img {
+    margin: 15px 0;
+}
+.categories-bottom .music-category img {
+    margin: 15px 0;
+}
+
+.categories-top h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.categories-bottom h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.topic-category-frame {
+    margin: 30px 0;
+    width: 100%;
+    background-color: #F7F9FA;
+    position: absolute ;
+    top: 3150px;
+    padding-bottom: 20px;
+}
+.topic-category-frame .categorials {
+    width: 68%;
+    margin: 6px 0 0 290px;
+}
+
+.categorials .categories {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categorials .development-category {
+    width: 24%;
+    height: 350px;
+    border: none;
+}
+.categorials .business-category {
+    width: 24%;
+    height: 350px;
+    border: none;
+}
+.categorials .it-category {
+    width: 24%;
+    height: 350px;
+    border: none;
+}
+.categorials .design-category {
+    width: 24%;
+    height: 350px;
+    border: none;
+}
+.categories h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.categories a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5624D0;
+}
+.categories p {
+    margin-top: 10px;
+    color: #6A6F73;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.development-category button {
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: #F7F9FA;
+    
+}
+.development-category button a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.development-category button:hover {   
+    background: #cbc8ceda
+}
+
+.center3 {
+    position: absolute;
+    left: 15%;
+    top: 3700px;
+}
+
+.center3 .companies-container {
+    border: 1px solid black;
+    width: 100%;
+    align-items: center;
+}
+.companies-container .companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /**margin: 10px 0 0 18px;
+    padding-right: 10px;**/
+}
+footer {
+    position: absolute ;
+    margin: 30px 0;
+    width: 100%;
+    background-color: black;
+    top: 3600px;
+    height: 320px;
+    padding-bottom: 20px;
+}
+footer .all-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.all-links {
+    margin: 25px 20px 10px 0;
+}
+.all-links .links1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    list-style: none;
+    line-height: 34px;
+}
+.all-links .links2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    list-style: none;
+    line-height: 34px;
+}
+.all-links .links3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    list-style: none;
+    line-height: 34px;
+}
+.all-links .links1 {
+    height: 250px;
+    
+}
+.all-links .links2 {
+    height: 250px;
+}
+.all-links .links3 {
+    height: 250px;
+}
+.all-links .links4 {
+    height: 250px;
+    width: 120px;
+}
+.all-links .links5 {
+    height: 250px;
+    width: 120px;
+}
+.all-links .links6 {
+    height: 250px;
+    width: 120px;
+}
+.all-links .links7 {
+    height: 250px;
+}
+
+.all-links .links7 button{
+    padding: 15px 25px;
+    background-color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    width: 100%;
+    margin-left: 30px;
+}
+.all-links .links7 a{
+    text-decoration: none;
+    color: white;
+    
+}
+.all-links .links7 p{
+    font-size: 12px; 
+    color: white;
+    margin-left: 100px;
+}
